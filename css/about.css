@@ -1,0 +1,242 @@
+/* ===================================
+   ABOUT HERO
+=================================== */
+
+.about-hero{
+
+    background:#2563EB;
+    color:#FFFFFF;
+    text-align:center;
+    padding:80px 8%;
+
+}
+
+.about-hero h1{
+
+    font-size:48px;
+    margin-bottom:20px;
+
+}
+
+.about-hero p{
+
+    max-width:750px;
+    margin:auto;
+    font-size:18px;
+    line-height:1.8;
+
+}
+
+
+/* ===================================
+   ABOUT SECTION
+=================================== */
+
+.about-section{
+
+    background:#FFFFFF;
+
+}
+
+.about-container{
+
+    max-width:1200px;
+    margin:auto;
+
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+
+}
+
+.about-image img{
+
+    width:100%;
+    border-radius:12px;
+
+}
+
+.about-text h2{
+
+    color:#0A1628;
+    font-size:36px;
+    margin-bottom:20px;
+
+}
+
+.about-text p{
+
+    color:#64748B;
+    margin-bottom:20px;
+    line-height:1.8;
+
+}
+
+
+/* ===================================
+   MISSION & VISION
+=================================== */
+
+.mission{
+
+    background:#F8FAFC;
+
+}
+
+.mission-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:30px;
+
+}
+
+.mission-card{
+
+    background:#FFFFFF;
+    padding:30px;
+    text-align:center;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+
+}
+
+.mission-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.mission-card i{
+
+    font-size:45px;
+    color:#2563EB;
+    margin-bottom:20px;
+
+}
+
+.mission-card h3{
+
+    margin-bottom:15px;
+    color:#0A1628;
+
+}
+
+.mission-card p{
+
+    color:#64748B;
+    line-height:1.8;
+
+}
+
+
+/* ===================================
+   TECHNOLOGY
+=================================== */
+
+.technology{
+
+    background:#FFFFFF;
+
+}
+
+.tech-grid{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:25px;
+
+}
+
+.tech-card{
+
+    background:#F8FAFC;
+    padding:30px;
+    border-radius:12px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+
+}
+
+.tech-card:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.tech-card i{
+
+    font-size:45px;
+    color:#2563EB;
+    margin-bottom:15px;
+
+}
+
+.tech-card h4{
+
+    color:#0A1628;
+
+}
+
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media(max-width:992px){
+
+.about-container{
+
+grid-template-columns:1fr;
+text-align:center;
+
+}
+
+.about-image{
+
+order:-1;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.about-hero h1{
+
+font-size:36px;
+
+}
+
+.about-hero p{
+
+font-size:16px;
+
+}
+
+.mission-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.tech-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:500px){
+
+.tech-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}

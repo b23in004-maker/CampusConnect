@@ -1,0 +1,77 @@
+CREATE TABLE students(
+
+id INT AUTO_INCREMENT PRIMARY KEY,
+
+fullname VARCHAR(100),
+
+rollno VARCHAR(30) UNIQUE,
+
+email VARCHAR(100) UNIQUE,
+
+phone VARCHAR(15),
+
+department VARCHAR(50),
+
+year VARCHAR(20),
+
+password VARCHAR(255)
+
+);
+
+
+CREATE TABLE event_registration(
+
+id INT AUTO_INCREMENT PRIMARY KEY,
+
+student_email VARCHAR(100),
+
+event_name VARCHAR(100),
+
+registered_on TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+
+);
+
+
+CREATE TABLE room_booking(
+
+id INT AUTO_INCREMENT PRIMARY KEY,
+
+student_email VARCHAR(100),
+
+room_name VARCHAR(100),
+
+booking_date DATE,
+
+booking_time VARCHAR(20),
+
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+
+);
+
+CREATE TABLE contact_messages(
+
+id INT AUTO_INCREMENT PRIMARY KEY,
+
+name VARCHAR(100),
+
+email VARCHAR(100),
+
+subject VARCHAR(150),
+
+message TEXT,
+
+created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+
+);
+
+CREATE TABLE club_registrations (
+
+id INT AUTO_INCREMENT PRIMARY KEY,
+
+student_email VARCHAR(100) NOT NULL,
+
+club_name VARCHAR(150) NOT NULL,
+
+joined_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+
+);

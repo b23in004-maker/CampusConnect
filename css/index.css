@@ -1,0 +1,354 @@
+/* ===================================
+   HERO SECTION
+=================================== */
+
+.hero{
+
+    background:#F8FAFC;
+
+    min-height:85vh;
+
+    display:flex;
+
+    align-items:center;
+
+}
+
+.hero-content{
+
+    max-width:1200px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    align-items:center;
+
+    gap:60px;
+
+}
+
+.hero-text h1{
+
+    font-size:52px;
+
+    color:#0A1628;
+
+    line-height:1.2;
+
+    margin-bottom:20px;
+
+}
+
+.hero-text h1 span{
+
+    color:#2563EB;
+
+}
+
+.hero-text p{
+
+    font-size:18px;
+
+    color:#64748B;
+
+    margin-bottom:35px;
+
+    line-height:1.8;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+.hero-image{
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.hero-image img{
+
+    width:500%;
+	height: 400%;
+
+    max-width:5000px;
+
+}
+
+
+/* ===================================
+   FEATURES
+=================================== */
+
+.features{
+
+    background:#FFFFFF;
+
+}
+
+.feature-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.feature-card{
+
+    background:#FFFFFF;
+
+    border-radius:12px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.feature-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.feature-card i{
+
+    font-size:45px;
+
+    color:#2563EB;
+
+    margin-bottom:20px;
+
+}
+
+.feature-card h3{
+
+    color:#0A1628;
+
+    margin-bottom:15px;
+
+}
+
+.feature-card p{
+
+    color:#64748B;
+
+}
+
+
+/* ===================================
+   EVENTS
+=================================== */
+
+.events{
+
+    background:#F8FAFC;
+
+}
+
+.event-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+
+    gap:30px;
+
+}
+
+.event-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.event-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.event-card h3{
+
+    color:#0A1628;
+
+    margin-bottom:20px;
+
+}
+
+.event-card p{
+
+    margin-bottom:15px;
+
+    color:#64748B;
+
+}
+
+.event-card .btn{
+
+    margin-top:10px;
+
+}
+
+
+/* ===================================
+   CTA
+=================================== */
+
+.cta{
+
+    background:#2563EB;
+
+    color:white;
+
+    text-align:center;
+
+    padding:70px 8%;
+
+}
+
+.cta h2{
+
+    font-size:38px;
+
+    margin-bottom:20px;
+
+}
+
+.cta p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    margin-bottom:30px;
+
+    line-height:1.8;
+
+}
+
+.cta .btn{
+
+    background:#F59E0B;
+
+    color:#0A1628;
+
+    font-weight:600;
+
+}
+
+.cta .btn:hover{
+
+    background:#d97706;
+
+    color:white;
+
+}
+
+
+/* ===================================
+   RESPONSIVE
+=================================== */
+
+@media(max-width:992px){
+
+.hero-content{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.hero-image{
+
+order:-1;
+
+}
+
+.hero-buttons{
+
+justify-content:center;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+padding-top:40px;
+
+}
+
+.hero-text h1{
+
+font-size:38px;
+
+}
+
+.hero-text p{
+
+font-size:16px;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.hero-buttons .btn,
+
+.hero-buttons .btn-outline{
+
+width:200px;
+
+text-align:center;
+
+}
+
+.feature-grid,
+
+.event-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.cta h2{
+
+font-size:30px;
+
+}
+
+}
