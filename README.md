@@ -1,5 +1,7 @@
 # CampusConnect – Smart Campus Management System
 
+Note: This repository contains an academic project developed for a Full Stack Web Development course. The project was intentionally implemented using PHP and MySQL on a localhost (XAMPP) environment to satisfy the course requirements.
+
 ## 📌 Overview
 
 CampusConnect is a web-based Smart Campus Management System developed using PHP and MySQL. It provides a centralized platform where students can register for campus events, book college resources, join student clubs, and manage their profiles. An integrated Admin Portal allows administrators to monitor registrations, approve room bookings, and manage student activities.
@@ -232,3 +234,5 @@ Kakatiya Institute of Technology and Science, Warangal
 ## 📄 License
 
 This project is developed for educational and academic purposes.
+
+
