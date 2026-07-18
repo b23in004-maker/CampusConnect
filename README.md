@@ -102,13 +102,13 @@ CampusConnect/
 2. Clone this repository.
 
 ```
-git clone https://github.com/YOUR_USERNAME/CampusConnect.git
+git clone https://github.com/b23in004-maker/CampusConnect.git
 ```
 
 3. Copy the project into:
 
 ```
-C:\xampp\htdocs\
+C:\xampp1\htdocs\
 ```
 
 4. Start:
